@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Project Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Intro Section -->
+  <header class="intro">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Explore my creative works and personal projects.</p>
+    <div class="auth-buttons">
+      <button id="loginBtn">Login</button>
+      <button id="signupBtn">Sign Up</button>
+    </div>
+  </header>
+
+  <!-- Login & Sign Up Popup -->
+  <div id="authModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2 id="authTitle">Login</h2>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button id="authSubmit">Submit</button>
+      <p id="switchText">Don't have an account? <span id="switchLink">Sign up here</span></p>
+      <p class="message" id="authMessage"></p>
+    </div>
+  </div>
+
+  <!-- Project Gallery -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project">
+        <img src="https://picsum.photos/400/250?random=1" alt="Project 1" />
+        <h3>Portfolio Website</h3>
+        <p>A responsive website showcasing my web design work.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <img src="https://picsum.photos/400/250?random=2" alt="Project 2" />
+        <h3>Weather App</h3>
+        <p>A real-time weather app built using open APIs.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <img src="https://picsum.photos/400/250?random=3" alt="Project 3" />
+        <h3>Task Manager</h3>
+        <p>A clean and functional to-do list application.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
